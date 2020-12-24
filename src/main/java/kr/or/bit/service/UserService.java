@@ -59,7 +59,7 @@ public class UserService {
 		model.put("ranCheck", ranCheck);
 		String mailBody = VelocityEngineUtils.mergeTemplateIntoString( // 보내는 이메일
 				velocityEngineFactoryBean.createVelocityEngine(), "mail.vm", "UTF-8", model);
-		messageHelper.setFrom("jgdoh5930@naver.com"); // 보내는사람 생략하거나 하면 정상작동을 안함
+		messageHelper.setFrom("jgdoh92@naver.com"); // 보내는사람 생략하거나 하면 정상작동을 안함
 		messageHelper.setTo(email); // 받는사람 이메일
 		messageHelper.setSubject(MimeUtility.encodeText("파이에서 회원가입 이메일 보내요~")); // 메일제목은 생략이 가능하다
 		messageHelper.setText(mailBody, true);
@@ -76,7 +76,7 @@ public class UserService {
 		model.put("ran", ranCheck);
 		String mailBody = VelocityEngineUtils.mergeTemplateIntoString( // 보내는 이메일
 				velocityEngineFactoryBean.createVelocityEngine(), "password.vm", "UTF-8", model);
-		messageHelper.setFrom("jgdoh5930@naver.com"); // 보내는사람 생략하거나 하면 정상작동을 안함
+		messageHelper.setFrom("jgdoh92@naver.com"); // 보내는사람 생략하거나 하면 정상작동을 안함
 		messageHelper.setTo(email); // 받는사람 이메일
 		messageHelper.setSubject(MimeUtility.encodeText("비밀번호 변경 인증번호")); // 메일제목은 생략이 가능하다
 		messageHelper.setText(mailBody, true);

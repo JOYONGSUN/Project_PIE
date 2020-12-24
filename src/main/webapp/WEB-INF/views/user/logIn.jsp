@@ -52,5 +52,7 @@
 	
 	<!-- 구글 로그인 -->
 	<div id = "google" class="g-signin2" data-onsuccess = "onSignIn"></div>
+	
+	<a href="chatWebSocket.htm">채팅로그인</a>
 </body>
 </html>

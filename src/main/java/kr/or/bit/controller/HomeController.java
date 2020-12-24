@@ -37,4 +37,9 @@ public class HomeController {
 	public String findPassword() {
 		return "user/findPassword";
 	}
+	
+	@RequestMapping(value = "chatWebSocket.htm", method = RequestMethod.GET)
+	public String chatLogin() {
+		return "login";
+	}
 }
