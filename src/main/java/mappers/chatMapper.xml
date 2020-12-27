@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="kr.or.bit.dao.ChatDao">
+	<select id="chatRoomList" resultType="roomDto">
+		SELECT roomno, roomname FROM room ORDER BY roomno
+	</select>
+	
+	<insert id="openChatRoom">
+		INSERT INTO room(roomname) VALUES(#{roomname})
+	</insert>
+	
+	<!--  -->
+	 <!-- insertBoard(글 입력하기) -->
+ <insert id="insertRoom" parameterType="roomDto">
+    insert into room(roomname) values(#{roomname})
+ </insert>
+
+ <select id="getRoomList" resultType="roomDto">
+  select * from room
+ </select>
+	
+ <select id="loginUser" resultType="userDto">
+	select email,pwd from user where email=#{param1} and pwd=#{param2}
+</select>
+
+ <insert id="joinUser" parameterType="userDto">
+    insert into user(email,
+    				nickName,
+                      pwd)
+      values(
+         #{email},
+         #{nickName},
+         #{pwd}
+      )
+ </insert>
+
+</mapper>
+
+	
+
+
+
+
+
+
+
+
+
+

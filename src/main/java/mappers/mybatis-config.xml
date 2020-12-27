@@ -5,6 +5,7 @@
 <configuration>
 	<typeAliases>
 		<typeAlias type="kr.or.bit.dto.user" alias="userDto"/>
+		<typeAlias type="kr.or.bit.dto.user" alias="roomDto"/>
 	</typeAliases>
 </configuration>
 

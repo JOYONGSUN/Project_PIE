@@ -85,6 +85,10 @@ $(document).ready( function(){
                         <label for="password">Password check</label>
                         <input type="password" id="pwd2" name="pwd2"  placeholder="Please enter your Paasword" type="password" class="form-control" />
                     </div>
+                    <div class="form-group">
+                        <label for="nickname">Password check</label>
+                        <input type="text" id="nickName" name="nickName"  placeholder="Please enter your nickname" class="form-control" />
+                    </div>
                     <br>
                     <br>
                     <div class="form-group text-center">
